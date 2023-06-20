@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: __proto__
+  name: aa
   annotations:
     github.com/project-slug: Smirnoffq/test
   links:
@@ -12,6 +12,6 @@ metadata:
       title: alert
       icon: dashboard
 spec:
-  type: __proto__
+  type: asd
   lifecycle: unknown
   owner: guests
