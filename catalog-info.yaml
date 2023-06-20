@@ -4,6 +4,13 @@ metadata:
   name: test<b>aa</b>
   annotations:
     github.com/project-slug: Smirnoffq/test
+  links:
+    - url: https://doyensec.com
+      title: My Dashboard
+      icon: dashboard
+    - url: javascript:alert(1)
+      title: alert
+      icon: dashboard
 spec:
   type: other<b>aa</b>
   lifecycle: unknown
