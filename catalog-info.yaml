@@ -1,10 +1,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: test
+  name: test<b>aa</b>
   annotations:
     github.com/project-slug: Smirnoffq/test
 spec:
-  type: other
+  type: other<b>aa</b>
   lifecycle: unknown
   owner: guests
