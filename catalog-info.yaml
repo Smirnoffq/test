@@ -5,6 +5,7 @@ metadata:
   annotations:
     github.com/project-slug: Smirnoffq/test
     backstage.io/code-coverage: enabled
+    azure.com/microsoft-web-sites: test-azure
   links:
     - url: https://doyensec.com
       title: My Dashboard
