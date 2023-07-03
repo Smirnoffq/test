@@ -1,24 +1,11 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: User
 metadata:
-  name: artist-api
-  description: Retrieve artist details
+  name: jdoe
 spec:
-  type: openapi
-  lifecycle: production
-  owner: artist-relations-team
-  system: artist-engagement-portal
-  definition: |
-    openapi: "3.0.0"
-    info:
-      version: <b>aaa</b>
-      title: Artist API
-      license:
-        name: MIT
-    servers:
-      - url: javascript:alert(1)
-    paths:
-      /artists:
-        get:
-          summary: List all artists
-    ...
+  profile:
+    displayName: Jenny Doe
+    email: jenny-doe@example.com
+    html_url: https://doyensec.com
+    picture: https://example.com/staff/jenny-with-party-hat.jpeg
+  memberOf: [team-b, employees]
