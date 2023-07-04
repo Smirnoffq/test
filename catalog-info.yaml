@@ -1,11 +1,27 @@
 apiVersion: backstage.io/v1alpha1
-kind: User
+kind: API
 metadata:
-  name: jdoe
+  name: artist-api
+  description: Retrieve artist details
+  annotations:
+    backstage.io/view-url: https://doyensec.com/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/my-org/catalog/edit/master/my-service.jsonnet
 spec:
-  profile:
-    displayName: Jenny Doe
-    email: jenny-doe@example.com
-    html_url: https://doyensec.com
-    picture: https://example.com/staff/jenny-with-party-hat.jpeg
-  memberOf: [team-b, employees]
+  type: openapi
+  lifecycle: production
+  owner: artist-relations-team
+  system: artist-engagement-portal
+  definition: |
+    openapi: "3.0.0"
+    info:
+      version: 1.0.0
+      title: Artist API
+      license:
+        name: MIT
+    servers:
+      - url: http://artist.spotify.net/v1
+    paths:
+      /artists:
+        get:
+          summary: List all artists
+    ...
